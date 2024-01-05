@@ -274,3 +274,7 @@ body {
 #competences .container .classement5 {
     background-position: 0 0px;
 }
+
+#passions div span{
+    font-weight: bold;
+}
