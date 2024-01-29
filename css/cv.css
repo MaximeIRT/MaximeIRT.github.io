@@ -288,3 +288,11 @@ body {
 }
 
 
+#cv-back {
+    width: 172px;
+    height: 172px;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 5px;
+    display: inline-block;
+}
