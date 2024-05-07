@@ -1,0 +1,24 @@
+body, .jumbotron {
+    background: linear-gradient(135deg, #005c97, #00b4db, #1a67db, #00b4db, #005c97);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Ajout d'un effet de transition pour une transition fluide */
+body:hover {
+    transition: background-color 0.5s ease;
+    background-color: #003366; /* Nouvelle couleur au survol */
+}
+

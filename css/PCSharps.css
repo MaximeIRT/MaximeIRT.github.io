@@ -1,38 +1,30 @@
-/*
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
-*/
-/* 
-    Created on : 27 déc. 2023, 16:07:54
-    Author     : maxim
-*/
+
 
 body {
     padding-top: 50px;
 }
+
 .cadreCV {
     padding-bottom: 15px;
     background: white;
 }
 
+
+
 #cv-entete {
-    margin-top: -35px;
+    background-image: url('../images/csharp.jpg'); /* Utiliser l'image comme fond */
+    background-size: cover; /* Ajustement de la taille de l'image pour couvrir tout le conteneur */
+    background-position: center; /* Centrer l'image dans le conteneur */
     width: 100%;
+    padding: 100px;
 }
 
 #cv-photo {
-    width: 172px;
-    height: 172px;
-    border-radius: 50%;
-    overflow: hidden;
-    padding: 5px;
-    background: #eee;
-    display: inline-block;
+    display: none; /* Masquer l'image */
 }
+
 #cv-photo img {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
+    display: none
 }
 #cv-intro h1 {
     margin: 0;
@@ -42,16 +34,16 @@ body {
     letter-spacing: -1px;
 }
 #cv-intro h1 span{
-    color: red;
+    color: blueviolet;
 }
-#cv-intro::after {
+/*#cv-intro::after {
     background: url("images/ligne.png");
     width: 100%;
     height: 3px;
     margin-top: 15px;
     content: '';
     display: block;
-}
+}*/
 
 .rubrique {
     margin-bottom: 15px;
@@ -307,4 +299,6 @@ body {
     background : url("../images/banniere.png");
     width: 100%;
 }
+
+
 
