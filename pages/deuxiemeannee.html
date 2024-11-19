@@ -1,20 +1,18 @@
 <!doctype html>
 <html lang="fr">
     <head>
-        <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="Portfolio de Maxime Imperatrice - BTS SIO SLAM">
         <meta name="author" content="Maxime imperatrice">
         <link rel="icon" href="favicon.ico">
-        <link href="../css/contacter.css" rel="stylesheet" >
+        <link href="../css/Projets.css" rel="stylesheet" >
+        <script src="../js/realisationjava.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
               rel="stylesheet">
-        <title>Portfolio de Maxime Imperatrice(BTS SIO)</title>
     </head>
     <body>
-        <h1>Nous contacter :</h1>
         <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-md">
             <div class="container">
                 <button type="button" class="navbar-toggler" data-toggle="collapse"
@@ -58,30 +56,43 @@
                 </div>
             </div>
         </nav>
-        <section id="contact">
-            <h1>Me contacter :</h1>
-            <form name="form_contact" action="http://gil83.fr/nolark/testforms.php" method="POST">
-                <fieldset id="coordo">
-                    <div><label for="i_nom">Votre nom :</label> <input type="text" name="i_nom" id="i_nom" size="35" pattern="^[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ\s\-]+$" required><div class="input-validation"></div></div>
-                    <div><label for="i_prenom">Votre prénom :</label> <input type="text" name="i_prenom" id="i_prenom" size="35" pattern="^[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ\s\-]+$" required><div class="input-validation"></div></div>
-                    <div><label for="i_email">Votre e-mail :</label> <input type="email" name="i_email" id="i_email" size="35" pattern="^[a-z0-9\._\%\+\-]+@[a-z0-9\.\-]+\.[a-z]{2,}$" required><div class="input-validation"></div></div>
-                    <div>
-                        <label>Date de naissance : </label>
-                        <input type="number" name="num_jour" id="num_jour" min="1" max="31"> / <input type="number" name="num_mois" id="num_mois" min="1" max="12"> / <input type="number" name="num_annee" id="num_annee" min="1900" max="2016">
-                    </div>
-                </fieldset>
-                <fieldset id="motif">
-                    <legend>Motif du contact</legend>
-                    <div><input type="radio" name="rd_motif" value="deminfo" id="rd_deminfo"> <label for="rd_deminfo">Demande d'information</label></div>
-                    <div><input type="radio" name="rd_motif" value="reclam" id="rd_reclam"> <label for="rd_reclam">Réclamation</label></div>
-                    <div><input type="radio" name="rd_motif" value="satis" id="rd_satis"> <label for="rd_satis">Satisfaction</label></div>
-                    <div><input type="radio" name="rd_motif" value="suivi" id="rd_suivi"> <label for="rd_suivi">Suivi de commande</label></div>
-                    <div><input type="radio" name="rd_motif" value="pub" id="rd_pub"> <label for="rd_pub">Publicité</label></div>
-                    <div><input type="radio" name="rd_motif" value="autre" id="rd_autre"> <label for="rd_autre">Autre...</label></div>
-                    <div><label for="area_precisions">Si "Autre", veuillez préciser :</label><br><textarea name="area_precisions" id="area_precisions" cols="35" rows="10"></textarea></div>
-                </fieldset>
-                <div id="controles"><input type="submit" id="btn_envoyer" name="sub_envoyer" value="Envoyer votre demande de contact"> <input type="reset" name="rst_annuler" value="Effacer les réponses"></div>
-            </form>
+        <section class="jumbotron text-center">
+            <div class="container">
+                <h1 class="jumbotron-heading">Différentes compétences acquis en classe</h1>
+                <p class="lead text-muted">Le BTS SIO m’a permis de développer des compétences solides en programmation, gestion de bases de données,
+                    analyse des besoins clients, ainsi qu’en conception et maintenance d’applications informatiques adaptées aux exigences professionnelles."
+                </p>
+            </div>
         </section>
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm" onmousemove="tiltImage(event, this)" onmouseout="resetImage(this)">
+                            <a href="PNolark.html"><img class="imag" src="../images/nolark.png" alt="IHM Coach" id="image"></a>
+                            <div class="card-body">
+                                <p class="card-text">Nolark : site de vitrine de casques</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm" onmousemove="tiltImage(event, this)" onmouseout="resetImage(this)">
+                            <a href="PCsharp.html"><img class="imag" src="../images/csharp.jpg" alt="Structuration MVC" id="image"></a>
+                            <div class="card-body">
+                                <p class="card-text">C#</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm" onmousemove="tiltImage(event, this)" onmouseout="resetImage(this)">
+                            <a href="PJavascript.html"><img class="imag" src="../images/java.jpg" alt="Adapters" id="image"></a>
+                            <div class="card-body">
+                                <p class="card-text">Javascript</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
